@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Raleway", sans-serif;
+    padding: 2rem 1rem;
+
+    .title {
+        font-weight: 800;
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-weight: 200;
+        text-align: left;
+        font-size: 1.25rem;
+        margin-top: 0.5rem;
+
+        .whippy {
+            font-weight: 800;
+        }
+    } 
+}
+
+img {
+    max-width: 95%;
+    max-height: 45vh;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// button design forked from Colt Steele's Random Dog Pictures page 
+// for the Advanced Web Developer Bootcamp: https://codepen.io/Colt/pen/EXWGam
+.btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #28C545;
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 15px;
+  border-radius: 25px;
+  box-shadow: 0 6px #28A745;
+  margin-bottom: 3rem;
+}
+
+.btn:hover {
+  box-shadow: 0 4px #28A745;
+  top: 2px;
+}
+
+.btn:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+@media (min-width: 768px){
+    header {
+        .title {
+            font-size: 3rem;
+        }
+
+        .subtitle {
+            font-size: 1.75rem;
+        }
+    }
+
+    img {
+        max-height: 50vh;
+    }
+}
+
+@media (min-height: 800px){
+    img {
+        max-height: 60vh;
+    }
+}
