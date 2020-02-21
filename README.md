@@ -1,2 +1,3 @@
-# whippet-generator
-generates a random whippet picture using the dog.ceo API
+# Whippet Generator
+
+Generates random whippet pictures using the dog.ceo API
